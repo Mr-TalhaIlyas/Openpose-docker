@@ -8,13 +8,13 @@ If you use `v2` build you don't have to do any extra installation process.
 ```
 docker pull talhailyas/openpose-v2:v0.1
 ```
-Run like
+Run in interactive model like; so you can use VS Code to attach the running container on remote or local server.
 
 ```
 docker run --gpus all -it --rm -v /home/dir/to/mount/:/openpose/examples/media/ openpose-v2 /bin/bash
-
 ```
-or RUN with proper input, output dirs
+
+or RUN with proper input, output dirs in background will exit once all videos processed in the input dir.
 
 ```
 docker run --gpus all \
@@ -26,6 +26,7 @@ docker run --gpus all \
 ```
 
 #### The `python` file `get_pose.py` is given in this github repo which you can download and load into docker image.
+** Inside set `save_annotated_video=True` to save the pose annotated videos else set to `False` to only write `json` files.
 
 
 ## Prerequistes
