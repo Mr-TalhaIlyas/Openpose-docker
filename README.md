@@ -26,7 +26,7 @@ docker run --gpus all \
 ```
 
 #### The `python` file `get_pose.py` is given in this github repo which you can download and load into docker image.
-** Inside set `save_annotated_video=True` to save the pose annotated videos else set to `False` to only write `json` files.
+**Inside set `save_annotated_video=True` to save the pose annotated videos else set to `False` to only write `json` files.**
 
 
 ## Prerequistes
