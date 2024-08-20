@@ -25,7 +25,7 @@ docker run --gpus all \
     talhailyas/openpose-v2:v0.1 /bin/bash -c "python3 /openpose/get_pose.py"
 ```
 
-#### The `python` file `get_pose.py` has following content.
+#### The `python` file `get_pose.py` is given in this github repo which you can download and load into docker image.
 
 
 ## Prerequistes
@@ -35,11 +35,12 @@ Requirements
 *   Nvidia Docker runtime: https://github.com/NVIDIA/nvidia-docker#quickstart `nvidia-ctk`
 *  CUDA 10.0 or higher on your host, check with `nvidia-smi`
 
+## END
+______________________________
+# Version 1 (Only if you want to build with some sepecific settings.)
+### Original `v2` Dockerfile used to build the `openpose-v2` image is below
 
-
-# Version 1
-### Original Dockerfile used to build the `openpose-v1` image is below
-
+`openpose-v1` file. Versions here only I labelled as my convenience don't have any impact on original source code at all.
 ```Dockerfile
 FROM nvidia/cuda:11.3.1-cudnn8-devel-ubuntu18.04
 
@@ -86,7 +87,7 @@ RUN cmake -DBUILD_PYTHON=ON .. && make -j `nproc`
 # RUN cmake -D CUDA_TOOLKIT_ROOT_DIR=/usr/local/cuda-11.3/bin/ -DBUILD_PYTHON=ON .. && make -j `nproc`
 WORKDIR /openpose
 ``` 
-You have to download the `models` and `3rdparty` models yourself. Use following links to do it. [#1602](https://github.com/CMU-Perceptual-Computing-Lab/openpose/issues/1602) and [#2230](https://github.com/CMU-Perceptual-Computing-Lab/openpose/issues/2230)
+You have to download the `models` and `3rdparty` models yourself. Use following links to do it. [#1602](https://github.com/CMU-Perceptual-Computing-Lab/openpose/issues/1602) and [#2230](https://github.com/CMU-Perceptual-Computing-Lab/openpose/issues/2230) or you can download from my Gdrive as below.
 
 ### Download these 2 links (G Driver):
 G Drive version:
