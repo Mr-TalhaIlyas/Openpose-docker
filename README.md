@@ -13,7 +13,13 @@ Run in interactive model like; so you can use VS Code to attach the running cont
 ```
 docker run --gpus all -it --rm -v /home/dir/to/mount/:/openpose/examples/media/ openpose-v2 /bin/bash
 ```
+Check installation by;
 
+```shell
+(env)$ python3
+>> import pyopenpose as op
+>> 
+```
 or RUN with proper input, output dirs in background will exit once all videos processed in the input dir.
 
 ```
