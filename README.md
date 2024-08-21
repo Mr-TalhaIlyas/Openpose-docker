@@ -1,6 +1,9 @@
 # [Openpose-docker](https://hub.docker.com/repository/docker/talhailyas/openpose-v2/general)
 Easy Install OpenPose Docker Image
-
+* python>=3.6
+* cuda:11.3.1
+* cudnn8-devel
+* ubuntu18.04
 # Simple One Step installation (Updated)
 
 If you use `v2` build you don't have to do any extra installation process.
@@ -16,7 +19,7 @@ docker run --gpus all -it --rm -v /home/dir/to/mount/:/openpose/examples/media/ 
 Check installation by;
 
 ```shell
-(env)$ python3
+root(inside_container)$ python3
 >> import pyopenpose as op
 >> 
 ```
