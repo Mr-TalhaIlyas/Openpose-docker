@@ -77,5 +77,5 @@ print(60*'=')
 print(f'Found {len(video_files)} files.')
 for video_file in video_files:
     video_path = os.path.join(input_dir, video_file)
-    process_video(video_path=video_path, output_dir=output_dir, save_annotated_video=True)
+    process_video(video_path=video_path, output_dir=output_dir, save_annotated_video=False)
 
