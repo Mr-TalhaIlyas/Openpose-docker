@@ -26,7 +26,7 @@ root(inside_container)$ python3
 or RUN with proper input, output dirs in background will exit once all videos processed in the input dir.
 
 ```
-docker run --gpus all \
+docker run --gpus "'device=0'" \
     -v /home/user01/Data/openpose/input:/openpose/input \
     -v /home/user01/Data/openpose/output:/openpose/output \
     -v /home/user01/Data/openpose/logs:/openpose/logs \
